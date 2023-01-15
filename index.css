@@ -1,0 +1,540 @@
+@charset "UTF-8";
+body {
+  font-family: "","Roboto", "Noto Sans JP", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+.top_menu {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+}
+
+.top_menu h3 {
+  padding-left: 100px;
+  padding-top: 20px;
+  color: #d136d1;
+}
+
+.top_menu_list {
+  margin-right: 20px;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top_menu_list li {
+  margin-left: 20px;
+  color: white;
+}
+
+.top_menu_list li :visited {
+  color: white;
+}
+
+.upbtn {
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background: -webkit-gradient(linear, left top, right top, from(#bd2184), to(#7146b8));
+  background: linear-gradient(to right, #bd2184, #7146b8);
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 570px;
+  right: 50px;
+}
+
+.material-icons {
+  padding-top: 8px;
+  font-size: 40px;
+  color: white;
+}
+
+.upbtn:hover {
+  opacity: 0.5;
+}
+
+.top {
+  background: -webkit-gradient(linear, left top, right bottom, from(#0e032e), to(#d136d1));
+  background: linear-gradient(to right bottom, #0e032e, #d136d1);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.top_left {
+  z-index: -1;
+  padding-left: 130px;
+  padding-top: 150px;
+}
+
+.top_left p {
+  color: #d136d1;
+}
+
+.top_left h1, .top_left h3 {
+  color: white;
+}
+
+.top_left h1 {
+  font-size: 90px;
+}
+
+.top_right {
+  margin-right: 100px;
+  margin-left: auto;
+  z-index: 2;
+}
+
+.top_right p {
+  color: white;
+  text-align: right;
+  margin-top: 116px;
+  padding-bottom: 10px;
+}
+
+.top::before {
+  content: url(img/teiji-de-kaerumon.svg);
+  position: absolute;
+  left: 400px;
+  top: 400px;
+  -webkit-transform: rotate(-13deg);
+          transform: rotate(-13deg);
+  margin-right: auto;
+}
+
+.top::after {
+  content: url(img/mv.png);
+  position: absolute;
+  right: 20px;
+  top: 00px;
+  margin-left: auto;
+  z-index: -1;
+}
+
+.about {
+  background-color: black;
+  padding-bottom: 50px;
+  margin-top: -20px;
+}
+
+.about h2 {
+  color: #d136d1;
+}
+
+.about_title {
+  text-align: center;
+  padding-top: 125px;
+  padding-bottom: 105px;
+  font-size: 60px;
+}
+
+.about_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_pic {
+  width: 90%;
+}
+
+.about_left {
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+.about_right {
+  width: 90%;
+  margin-right: 100px;
+  margin-left: auto;
+}
+
+.about_right p {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.about_right h2 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.topbtn {
+  margin-top: 50px;
+}
+
+.btn_application {
+  width: 300px;
+  height: 80px;
+  border-radius: 50px 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#bd2184), to(#7146b8));
+  background: linear-gradient(to right, #bd2184, #7146b8);
+  border: none;
+  color: white;
+  -webkit-box-shadow: 0 10px 0 #dd118e;
+          box-shadow: 0 10px 0 #dd118e;
+}
+
+.btn_application:hover {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 0 6px 0 #dd118e;
+          box-shadow: 0 6px 0 #dd118e;
+}
+
+.speaker {
+  background: -webkit-gradient(linear, left top, right bottom, from(#0e032e), to(#d136d1));
+  background: linear-gradient(to bottom right, #0e032e, #d136d1);
+}
+
+.speaker h2, .speaker h3 {
+  color: #d136d1;
+}
+
+.speaker h3 {
+  font-size: 40px;
+}
+
+.speaker p {
+  color: white;
+}
+
+.speaker h2 {
+  text-align: center;
+  margin-bottom: 100px;
+  padding-top: 50px;
+  font-size: 60px;
+}
+
+.speaker_a, .speaker_c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.speaker_a_jpeg, .speaker_c_jpeg {
+  width: 100%;
+}
+
+.name {
+  width: 95%;
+}
+
+.speaker_a_name, .speaker_c_name {
+  margin-left: 100px;
+}
+
+.speaker_a_profile, .speaker_c_profile {
+  margin-right: 100px;
+  margin-left: auto;
+  padding-left: 100px;
+}
+
+.speaker_b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.speaker_b_jpeg {
+  width: 100%;
+}
+
+.speaker_b_profile {
+  margin-left: 100px;
+}
+
+.speaker_b_name {
+  margin-right: 100px;
+  margin-left: auto;
+  padding-left: 100px;
+}
+
+.speaker_a, .speaker_b {
+  margin-bottom: 70px;
+}
+
+.speaker_c {
+  padding-bottom: 70px;
+}
+
+.session {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.session h2 {
+  color: #d136d1;
+  text-align: center;
+  font-size: 60px;
+}
+
+.session p {
+  color: white;
+}
+
+.session h4 {
+  color: #d136d1;
+}
+
+.session_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  border-bottom: solid 1px #d136d1;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.listboredernone {
+  border-bottom: none;
+}
+
+.session_list_time {
+  color: white;
+  width: 20%;
+  font-size: 20px;
+}
+
+.session_list_word {
+  width: 80%;
+}
+
+.registor {
+  background-image: url(img/bg.jpg);
+  padding-bottom: 100px;
+}
+
+.registor p {
+  color: white;
+}
+
+.registor h2 {
+  color: #d136d1;
+  font-size: 60px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.registor_job_list {
+  color: white;
+}
+
+.registor_form {
+  border: solid 3px #d136d1;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 90px;
+  padding-top: 60px;
+}
+
+.registor_name_required::after {
+  content: "*必須";
+  color: #d136d1;
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.registor_phone_set::after {
+  content: "(半角数字ハイフンなし)";
+  color: white;
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.registor_set {
+  margin-top: 30px;
+}
+
+label {
+  margin-right: 20px;
+  margin-left: 5px;
+}
+
+.registor_textarea_form {
+  border-radius: 5px;
+}
+
+.know_list {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.btn_enter {
+  display: block;
+  width: 300px;
+  height: 60px;
+  border-radius: 50px 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#bd2184), to(#7146b8));
+  background: linear-gradient(to right, #bd2184, #7146b8);
+  border: none;
+  color: white;
+  -webkit-box-shadow: 0 8px 0 #dd118e;
+          box-shadow: 0 8px 0 #dd118e;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn_enter:hover {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 0 4px 0 #dd118e;
+          box-shadow: 0 4px 0 #dd118e;
+}
+
+.footer_a {
+  background-image: url(img/bg.jpg);
+  margin-bottom: 0px;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 720px) {
+  .top_left h1 {
+    font-size: 60px;
+  }
+  .top_left p {
+    font-size: 14px;
+  }
+  .top_left h3 {
+    font-size: 20px;
+  }
+  .top::after {
+    content: "";
+    display: inline-block;
+    width: 350px;
+    height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    right: -10px;
+    top: 100px;
+    background-image: url(img/mv.png);
+    background-size: contain;
+    margin-left: auto;
+    z-index: -1;
+  }
+  .top::before {
+    content: url(img/teiji-de-kaerumon.svg);
+    position: absolute;
+    left: 100px;
+    top: 340px;
+    -webkit-transform: rotate(-13deg);
+            transform: rotate(-13deg);
+    margin-right: auto;
+  }
+  .top_left {
+    padding-left: 100px;
+  }
+  .top_right p {
+    margin-top: 35px;
+    margin-bottom: 5px;
+  }
+  .about_head {
+    display: block;
+  }
+  .about_right {
+    margin-left: 100px;
+    margin-right: 10%;
+    margin-top: 50px;
+    width: 350px;
+  }
+  .about_right p {
+    margin-bottom: 20px;
+  }
+  .about_pic {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .btn_application {
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 200px;
+    height: 60px;
+  }
+  .topbtn {
+    margin-top: 50px;
+  }
+  .speaker_b_name {
+    margin-left: 100px;
+    padding-left: 0px;
+  }
+  .speaker_a, .speaker_b, .speaker_c {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-left: 20%;
+    margin-right: auto;
+  }
+  .speaker_a .name, .speaker_b .name, .speaker_c .name {
+    margin-top: 40px;
+    width: 70%;
+  }
+  .name {
+    margin-left: 0px;
+  }
+  .profile {
+    margin-right: auto;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .speaker_a_jpeg, .speaker_b_jpeg, .speaker_c_jpeg {
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .registor_textarea_form {
+    width: 90%;
+  }
+  .yourname, .number, .address {
+    width: 90%;
+  }
+  .registor_form {
+    padding-left: 10%;
+  }
+  button:hover {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+    -webkit-box-shadow: 0 6px 0 #dd118e;
+            box-shadow: 0 6px 0 #dd118e;
+  }
+}
+/*# sourceMappingURL=index.css.map */
